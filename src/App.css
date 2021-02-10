@@ -101,28 +101,6 @@ img {
 #home-articles .articles-container > *:last-child {
   grid-column: 2 / span 2;
 }
-.card {
-  background: #fff;
-  padding: 1rem;
-}
-.category {
-  display: inline-block;
-  color: #fff;
-  font-size: 0.55rem;
-  text-transform: uppercase;
-  padding: 0.4rem 0.6rem;
-  border-radius: 15px;
-  margin-bottom: 0.5rem;
-}
-.category-js {
-  background-color: #009cff;
-}
-.category-react {
-  background-color: #f99500;
-}
-.category-spa {
-  background-color: #a66bbe;
-}
 
 /* Footer */
 #main-footer {

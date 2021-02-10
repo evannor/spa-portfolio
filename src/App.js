@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
+import Card from "./components/Card";
 
 import calc from "./images/calculator.jpg";
 import pomo from "./images/pomodoro.jpg";
@@ -55,36 +56,33 @@ function App() {
       <section id="cur-projs" className="py-2">
         <div className="container">
           <div className="project-container">
-            <article className="card">
-              <img src={calc} alt="White calculator with white background" />
-              <div className="category category-js">Javascript</div>
-              <h3>Basic Calculator</h3>
-              <p>
-                This will be the about for the Basic Calculator. Must add link
-                to this card to see full detail about project
-              </p>
-            </article>
-            <article className="card">
-              <div className="category category-react">React</div>
-              <h3>React Pomodoro Timer</h3>
-              <p>
-                This will be the about for the React Pomodoro Timer. Must add
-                link to this card to see full detail about project
-              </p>
-              <img
-                src={pomo}
-                alt="Pomodoro with laptop and headphones in background"
-              />
-            </article>
-            <article className="card">
-              <img src={spa} alt="Website Mock-up" />
-              <div className="category category-spa">SPA</div>
-              <h3>SPA Portfolio</h3>
-              <p>
-                This will be the about for the SPA Portfolio. Must add link to
-                this card to see full detail about project
-              </p>
-            </article>
+            <Card
+              src={calc}
+              alt="White calculator with white background"
+              categoryClass="category category-js"
+              category="Javascript"
+              title="Basic Calculator"
+              desc="This will be the about for the Basic Calculator. Must add link
+                to this card to see full detail about project"
+            />
+            <Card
+              src={pomo}
+              alt="Pomodoro with laptop and headphones in background"
+              categoryClass="category category-react"
+              category="React"
+              title="React Pomodoro Timer"
+              desc="This will be the about for the React Pomodoro Timer. Must add
+                link to this card to see full detail about project"
+            />
+            <Card
+              src={spa}
+              alt="Website Mock-up"
+              categoryClass="category category-spa"
+              category="SPA"
+              title="SPA Portfolio"
+              desc="This will be the about for the SPA Portfolio. Must add link to
+                this card to see full detail about project"
+            />
           </div>
         </div>
       </section>
