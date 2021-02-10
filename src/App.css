@@ -1,31 +1,34 @@
+/* Site */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  line-height: 1.5;
+}
 a {
   text-decoration: none;
 }
 ul {
   list-style: none;
 }
+img {
+  width: 100%;
+}
 
+/* Site Utility */
 .py-2 {
   padding: 2rem 0;
 }
-
-.about-me {
-  text-align: center;
-}
-.about-me h1 {
-  font-size: 36px;
-  padding: 20px 0;
-}
-.about-me p {
-  padding: 20px 30%;
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
 }
 
+/* Site Layout and Backgrounds */
 .pimg1 {
   background-image: url("./images/javascript.jpg");
 }
@@ -67,6 +70,58 @@ ul {
   .pimg3 {
     background-attachment: scroll;
   }
+}
+
+/* About Me */
+.about-me {
+  text-align: center;
+}
+.about-me h1 {
+  font-size: 36px;
+  padding: 20px 0;
+}
+.about-me p {
+  padding: 20px 30%;
+}
+
+/* Current Projects */
+#cur-projs .project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  grid-column: 1 / span 2;
+}
+#home-articles .articles-container > *:last-child {
+  grid-column: 2 / span 2;
+}
+.card {
+  background: #fff;
+  padding: 1rem;
+}
+.category {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+.category-js {
+  background-color: #009cff;
+}
+.category-react {
+  background-color: #f99500;
+}
+.category-spa {
+  background-color: #a66bbe;
 }
 
 /* Footer */

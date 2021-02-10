@@ -1,6 +1,10 @@
 import "./App.css";
 import Header from "./components/Header";
 
+import calc from "./images/calculator.jpg";
+import pomo from "./images/pomodoro.jpg";
+import spa from "./images/spa.jpg";
+
 function App() {
   const copyDate = new Date().getFullYear();
   return (
@@ -52,10 +56,7 @@ function App() {
         <div className="container">
           <div className="project-container">
             <article className="card">
-              <img
-                src={require("./images/calculator.jpg")}
-                alt="White calculator with white background"
-              />
+              <img src={calc} alt="White calculator with white background" />
               <div className="category category-js">Javascript</div>
               <h3>Basic Calculator</h3>
               <p>
@@ -71,12 +72,12 @@ function App() {
                 link to this card to see full detail about project
               </p>
               <img
-                src={require("./images/pomodoro.jpg")}
+                src={pomo}
                 alt="Pomodoro with laptop and headphones in background"
               />
             </article>
             <article className="card">
-              <img src={require("./images/spa.jpg")} alt="Website Mock-up" />
+              <img src={spa} alt="Website Mock-up" />
               <div className="category category-spa">SPA</div>
               <h3>SPA Portfolio</h3>
               <p>
