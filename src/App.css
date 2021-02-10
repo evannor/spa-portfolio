@@ -3,3 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+#header-home {
+  background: url("./images/lake-crescent.jpg") no-repeat center right/cover;
+  height: 100vh;
+  color: #fff;
+}
+#header-home .header-content {
+  text-align: center;
+  padding-top: 20%;
+}
+#header-home .header-content h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
