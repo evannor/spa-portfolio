@@ -17,7 +17,7 @@ function Header() {
           ></span>
         </h1>
         <p className="lead border">
-          I specialize in creating understandable, dyanmic, single and
+          I specialize in creating understandable, dynamic, single and
           multi-page applications via HTML, CSS, and Javascript
         </p>
       </div>

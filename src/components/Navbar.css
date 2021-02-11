@@ -1,5 +1,9 @@
+i {
+  padding-left: 0.5rem;
+}
 #navbar {
   text-align: center;
+  font-family: "Roboto Slab", serif;
 }
 #navbar ul {
   list-style: none;
@@ -10,6 +14,7 @@
   display: inline-block;
   padding: 1rem;
   position: relative;
+  margin: 0 5rem;
 }
 
 #navbar ul li a {
@@ -24,7 +29,7 @@
 
 #navbar ul li:hover {
   cursor: pointer;
-  background: coral;
+  background: #444;
   color: #fff;
 }
 /* Specifically selected link, as the color wasn't white on hover */
@@ -36,8 +41,8 @@
 #navbar ul li:hover ul {
   display: block;
   position: absolute;
-  left: 0;
-  width: 200px;
+  left: -80px;
+  width: 325px;
   margin-top: 1rem;
 }
 /* target each list item */
@@ -55,6 +60,21 @@
   color: inherit;
 }
 
+@media (max-width: 1275px) {
+  #navbar ul li {
+    margin: 0 3rem;
+  }
+}
+@media (max-width: 950px) {
+  #navbar ul li {
+    margin: 0 1.5rem;
+  }
+}
+@media (max-width: 720px) {
+  #navbar ul li {
+    margin: 0;
+  }
+}
 @media (max-width: 600px) {
   #navbar ul li {
     display: block;

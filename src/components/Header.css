@@ -10,6 +10,7 @@
 #header-home .header-content h1 {
   font-size: 4rem;
   line-height: 1.2;
+  letter-spacing: 4px;
 }
 .lead {
   font-size: 1.3rem;
