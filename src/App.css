@@ -90,16 +90,15 @@ img {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 }
-#home-articles .articles-container > *:first-child,
-#home-articles .articles-container > *:last-child {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-  align-items: center;
-  grid-column: 1 / span 2;
+@media (max-width: 768px) {
+  #cur-projs .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-#home-articles .articles-container > *:last-child {
-  grid-column: 2 / span 2;
+@media (max-width: 600px) {
+  #cur-projs .project-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Footer */
@@ -136,7 +135,7 @@ img {
 .btn {
   display: inline-block;
   border: none;
-  background: var(--dark-color);
+  background: #555;
   color: #fff;
   padding: 0.5rem 1.5rem;
 }
