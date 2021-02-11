@@ -1,12 +1,19 @@
 import React from "react";
 import "./Typewriter";
 import Navbar from "./Navbar";
+import MobileNav from "./MobileNav";
 import "./Header.css";
+import { logDOM } from "@testing-library/react";
 
 function Header() {
+  const x = window.matchMedia("(max-width: 1030px)");
+
   return (
     <header id="header-home">
-      <Navbar />
+      {console.log(x.matches)}
+      {x.matches ? <MobileNav /> : <Navbar />}
+      {/* <Navbar /> */}
+      {/* {x.addEventListener("change", setNavbar(x))} */}
       <div className="header-content">
         <h1 className="border">
           I Am Erica The
