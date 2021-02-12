@@ -64,23 +64,8 @@ i {
   #navbar ul li {
     margin: 0 3rem;
   }
-}
-@media (max-width: 950px) {
-  #navbar ul li {
-    margin: 0 1.5rem;
-  }
-}
-@media (max-width: 720px) {
-  #navbar ul li {
-    margin: 0;
-  }
-}
-@media (max-width: 600px) {
-  #navbar ul li {
-    display: block;
-  }
   #navbar ul li:hover ul {
-    width: 100%;
-    position: relative;
+    left: -50px;
+    width: 300px;
   }
 }

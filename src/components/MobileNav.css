@@ -25,7 +25,7 @@
   width: 60px;
   height: 60px;
   padding: 1rem;
-  background: var(--primary-color);
+  background: #444;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +83,7 @@
 /* Show Overlay */
 .menu-wrap .toggler:checked ~ .menu > div {
   transform: scale(1);
-  transition-duration: var(--menu-speed);
+  transition-duration: 0.75s;
 }
 /* Show ul (menu items) */
 .menu-wrap .toggler:checked ~ .menu > div > div {
@@ -107,7 +107,7 @@
 }
 /* Sets size, color, and transition of menu upon loading */
 .menu-wrap .menu > div {
-  background: var(--overlay-color);
+  background: rgba(24, 39, 51, 0.85);
   border-radius: 50%;
   width: 200vw;
   height: 200vw;
@@ -141,7 +141,7 @@
 }
 /* Style upon hover */
 .menu-wrap .menu > div > div > ul > li > a:hover {
-  color: var(--secondary-color);
+  color: #ffbc00;
 }
 @media only screen and (max-width: 400px) {
   .menu-wrap .menu > div {
