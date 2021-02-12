@@ -4,7 +4,13 @@ import "./Card.css";
 function Card(props) {
   return (
     <article className="card">
-      <img src={props.src} alt={props.alt} />
+      <img src={props.src} alt={props.alt} className="card-img" />
+      <div className="hover-txt">
+        <div className="hover-txt-wrap">
+          <p className="hover-txt-cat">{props.category}</p>
+          <h2 className="hover-txt-title">{props.title}</h2>
+        </div>
+      </div>
       <div>
         <div className={props.categoryClass}>{props.category}</div>
         <h3>{props.title}</h3>
