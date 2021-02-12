@@ -1,19 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Typewriter";
 import Navbar from "./Navbar";
 import MobileNav from "./MobileNav";
 import "./Header.css";
-import { logDOM } from "@testing-library/react";
 
 function Header() {
-  const x = window.matchMedia("(max-width: 1030px)");
+  let screen = window.matchMedia("(max-width: 1030px)");
+  // create state var for screen size
+  const [screenWidth, setScreenWidth] = useState(screen.matches);
 
+  const renderNavHandler = () => {
+    setScreenWidth(screen.matches);
+  };
+
+  screen.addEventListener("change", renderNavHandler);
   return (
     <header id="header-home">
-      {console.log(x.matches)}
-      {x.matches ? <MobileNav /> : <Navbar />}
-      {/* <Navbar /> */}
-      {/* {x.addEventListener("change", setNavbar(x))} */}
+      {/* Render component based upon screen size */}
+      {screenWidth ? <MobileNav /> : <Navbar />}
       <div className="header-content">
         <h1 className="border">
           I Am Erica The
