@@ -7,7 +7,7 @@
   text-align: center;
   padding-top: 20%;
 }
-#header-home .header-content h1 {
+#header-home .header-content .typewriter {
   font-size: 4rem;
   line-height: 1.2;
   letter-spacing: 4px;
@@ -22,6 +22,10 @@
   }
   #header-home .header-content {
     padding-top: 5rem;
+    display: none;
+  }
+  #header-home h1 {
+    display: inline;
   }
 }
 @media (max-width: 500px) {
@@ -29,9 +33,6 @@
     height: 10rem;
     border-bottom: 3px solid #ffbc00;
     background-position: 20% 30%;
-  }
-  #header-home .header-content {
-    display: none;
   }
 }
 @media (max-height: 580px) {

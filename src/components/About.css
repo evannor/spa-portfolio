@@ -1,0 +1,22 @@
+#about-me {
+  height: 75vh;
+  text-align: center;
+}
+#about-me h1 {
+  font-size: 2rem;
+  padding: 20px;
+}
+#about-me .about-skills {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#about-me .about-skills .about,
+#about-me .about-skills .skills {
+  flex-basis: 50%;
+  width: 100%;
+}
+#about-me .about-skills .about p {
+  padding: 20px;
+}

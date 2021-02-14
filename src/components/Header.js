@@ -19,7 +19,7 @@ function Header() {
       {/* Render component based upon screen size */}
       {screenWidth ? <MobileNav /> : <Navbar />}
       <div className="header-content">
-        <h1 className="border">
+        <h1 className="border typewriter">
           I Am Erica The
           <span
             className="txt-type"
