@@ -27,6 +27,10 @@ function App() {
       </section>
       <section id="cur-projs" className="py-2">
         <div className="container">
+          <p>
+            Please click on a card to visit the associated GitHub repository,
+            and view the README file for more information.
+          </p>
           <div className="project-container">
             <Card
               src={calc}
@@ -35,8 +39,7 @@ function App() {
               categoryClass="category category-js"
               category="Javascript"
               title="Basic Calculator"
-              desc="This will be the about for the Basic Calculator. Must add link
-                to this card to see full detail about project"
+              desc="Calculator created in vanilla JavaScript. It shows current output to screen, along with a search history."
             />
             <Card
               src={pomo}
@@ -45,8 +48,7 @@ function App() {
               categoryClass="category category-react"
               category="React"
               title="React Pomodoro Timer"
-              desc="This will be the about for the React Pomodoro Timer. Must add
-                link to this card to see full detail about project"
+              desc="This timer is a simple countdown app in React which helps me stay on track during studying and work hours."
             />
             <Card
               src={spa}
@@ -55,8 +57,7 @@ function App() {
               categoryClass="category category-spa"
               category="SPA"
               title="SPA Portfolio"
-              desc="This will be the about for the SPA Portfolio. Must add link to
-                this card to see full detail about project"
+              desc="You're experiencing this app now! Utilized React to create this Portfolio, showcasing my growing talents."
             />
           </div>
         </div>
@@ -70,6 +71,10 @@ function App() {
       </section>
       <section id="complete-projs" className="py-2">
         <div className="container">
+          <p>
+            Please click on a card to visit the associated GitHub repository,
+            and view the README file for more information.
+          </p>
           <div className="project-container">
             <Card
               src={secrets}

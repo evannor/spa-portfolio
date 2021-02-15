@@ -32,6 +32,7 @@ img {
   padding: 2rem;
 }
 .container {
+  text-align: center;
   max-width: 1100px;
   margin: auto;
   padding: 0 2rem;
@@ -82,32 +83,26 @@ img {
   }
 }
 
-/* About Me */
-.about-me {
-  text-align: center;
-}
-.about-me h1 {
-  font-size: 36px;
-  padding: 20px 0;
-}
-.about-me p {
-  padding: 20px 30%;
-}
-
 /* Current Projects */
 #cur-projs .project-container,
 #complete-projs .project-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
+}
+#cur-projs .project-container,
+#complete-projs .project-container {
+  padding: 3rem 0;
 }
 @media (max-width: 768px) {
-  #cur-projs .project-container {
+  #cur-projs .project-container,
+  #complete-projs .project-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 600px) {
-  #cur-projs .project-container {
+  #cur-projs .project-container,
+  #complete-projs .project-container {
     grid-template-columns: 1fr;
   }
 }

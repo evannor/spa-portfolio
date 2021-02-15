@@ -26,7 +26,7 @@ function About() {
             I am currently accepting clients, and seeking employment in this
             field. Please feel free to{" "}
             <a href="mailto:erica.vannorman@example.com">email me</a> or fill
-            out the <a href="#contact">contact form below</a>.
+            out the <a href="#main-footer">contact form below</a>.
           </p>
         </div>
         <div className="skills">

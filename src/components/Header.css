@@ -24,9 +24,6 @@
     padding-top: 5rem;
     display: none;
   }
-  #header-home h1 {
-    display: inline;
-  }
 }
 @media (max-width: 500px) {
   #header-home {
