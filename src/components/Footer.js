@@ -1,8 +1,31 @@
 import React from "react";
+import emailjs from "emailjs-com";
 import "./Footer.css";
 
 function Footer() {
   const copyDate = new Date().getFullYear();
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_0ptm9fm",
+        "portfolio-footer-contact",
+        e.target,
+        "user_V9yRlpDu3aGzh2Euoh2S8"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
+
   return (
     <footer id="main-footer" className="py-2">
       <div className="footer-container">
@@ -14,13 +37,18 @@ function Footer() {
         </div>
         <div className="footer-contact">
           <h3>Contact Me</h3>
-          <form>
-            <input type="text" placeholder="Full Name" />
-            <input type="email" placeholder="Enter Email" />
-            <textarea rows="4" cols="50" placeholder="Write message here..." />
+          <form onSubmit={sendEmail}>
+            <input type="text" placeholder="Full Name" name="full-name" />
+            <input type="email" placeholder="Enter Email" name="email" />
+            <textarea
+              rows="4"
+              cols="50"
+              placeholder="Write message here..."
+              name="message"
+            />
             <input
               type="submit"
-              value="Subscribe"
+              value="Send The Message"
               className="btn btn-primary"
             />
           </form>
@@ -61,9 +89,6 @@ function Footer() {
               <i className="fab fa-twitter fa-2x"></i>
             </a>
           </div>
-          <a href="#" className="btn btn-secondary">
-            Follow Me Now!
-          </a>
         </div>
         <div>
           <p>Copyright &copy; {copyDate}</p>
