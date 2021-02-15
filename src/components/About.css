@@ -53,6 +53,12 @@
   margin-right: 1rem;
 }
 
+@media (max-width: 1050px) {
+  #about-me {
+    height: auto;
+    padding-bottom: 10%;
+  }
+}
 @media (max-width: 800px) {
   #about-me .about-skills .skills {
     display: flex;

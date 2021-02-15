@@ -53,7 +53,7 @@ function Footer() {
             />
           </form>
         </div>
-        <div>
+        <div className="site-list">
           <h3>Site Links</h3>
           <ul className="list">
             <li>
@@ -74,7 +74,7 @@ function Footer() {
           </ul>
         </div>
         <div className="social">
-          <h2>Keep Up With My Work</h2>
+          <h2>Keep Up With Me</h2>
           <div className="social-icons">
             <a href="https://github.com/evannor" target="_blank">
               <i className="fab fa-github fa-2x"></i>
