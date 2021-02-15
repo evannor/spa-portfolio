@@ -29,32 +29,35 @@ function Footer() {
           <h3>Site Links</h3>
           <ul className="list">
             <li>
-              <a href="#">Home</a>
+              <a href="#navbar">Home</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#about-me">About</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a href="#cur-projs">Projects</a>
             </li>
             <li>
               <a href="#">Resume</a>
             </li>
             <li>
-              <a href="#">Contact Me</a>
+              <a href="#main-footer">Contact Me</a>
             </li>
           </ul>
         </div>
         <div className="social">
           <h2>Keep Up With My Work</h2>
           <div className="social-icons">
-            <a href="#">
+            <a href="https://github.com/evannor" target="_blank">
               <i className="fab fa-github fa-2x"></i>
             </a>
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/in/erica-vannorman/"
+              target="_blank"
+            >
               <i className="fab fa-linkedin-in fa-2x"></i>
             </a>
-            <a href="#">
+            <a href="https://twitter.com/CodesErica" target="_blank">
               <i className="fab fa-twitter fa-2x"></i>
             </a>
           </div>

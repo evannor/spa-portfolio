@@ -30,6 +30,7 @@ function App() {
           <div className="project-container">
             <Card
               src={calc}
+              address="https://github.com/evannor/basic-calculator-js"
               alt="White calculator with white background"
               categoryClass="category category-js"
               category="Javascript"
@@ -39,6 +40,7 @@ function App() {
             />
             <Card
               src={pomo}
+              address="https://github.com/evannor/pomodoro-timer"
               alt="Pomodoro with laptop and headphones in background"
               categoryClass="category category-react"
               category="React"
@@ -48,6 +50,7 @@ function App() {
             />
             <Card
               src={spa}
+              address="https://github.com/evannor/spa-portfolio"
               alt="Website Mock-up"
               categoryClass="category category-spa"
               category="SPA"
@@ -65,11 +68,12 @@ function App() {
           </div>
         </div>
       </section>
-      <section id="cur-projs" className="py-2">
+      <section id="complete-projs" className="py-2">
         <div className="container">
           <div className="project-container">
             <Card
               src={secrets}
+              address="https://github.com/evannor/Secrets"
               alt="Finger on lips gesturing for quiet"
               categoryClass="category category-backend"
               category="Backend"
@@ -78,6 +82,7 @@ function App() {
             />
             <Card
               src={api}
+              address="https://github.com/evannor/Wiki-API"
               alt="Large server room surrounded by glass walls"
               categoryClass="category category-api"
               category="API"
@@ -86,6 +91,7 @@ function App() {
             />
             <Card
               src={blog}
+              address="https://github.com/evannor/blog-v4"
               alt="Notebook and fountain pen"
               categoryClass="category category-mpa"
               category="MPA"
@@ -94,6 +100,7 @@ function App() {
             />
             <Card
               src={simon}
+              address="https://github.com/evannor/SimonGame"
               alt="Screen capture of Simon Says game"
               categoryClass="category category-js"
               category="Javascript"
@@ -102,6 +109,7 @@ function App() {
             />
             <Card
               src={sassPort}
+              address="https://github.com/evannor/sass-portfolio"
               alt="Screen capture of SASS Portfolio"
               categoryClass="category category-mpa"
               category="MPA"

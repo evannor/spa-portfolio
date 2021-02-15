@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.5;
@@ -92,7 +95,8 @@ img {
 }
 
 /* Current Projects */
-#cur-projs .project-container {
+#cur-projs .project-container,
+#complete-projs .project-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;

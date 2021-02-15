@@ -12,9 +12,9 @@ function About() {
             Having lived in New York, Arizona, and Georgia, the Pacific
             Northwest began calling my name in the mid 2010's. My two cats,
             April and Mickey, and myself arrived in Washington State in the
-            summer of 2015. I've enjoyed spending the last few years working the
-            hospitality and outdoor industry, allowing me the ability to explore
-            and become enthralled with this state and region.
+            summer of 2015. I've enjoyed spending the last few years working in
+            the hospitality and outdoor industry, allowing me the ability to
+            explore and become enthralled with this state and region.
           </p>
           <p>
             I have decided to pivot my career focus back into science and
@@ -24,8 +24,9 @@ function About() {
           </p>
           <p>
             I am currently accepting clients, and seeking employment in this
-            field. Please feel free to <a href="#">email me</a> or fill out the{" "}
-            <a href="#">contact form below</a>.
+            field. Please feel free to{" "}
+            <a href="mailto:erica.vannorman@example.com">email me</a> or fill
+            out the <a href="#contact">contact form below</a>.
           </p>
         </div>
         <div className="skills">

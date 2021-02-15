@@ -7,19 +7,19 @@ function Navbar() {
       <nav id="navbar">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#navbar">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#about-me">About</a>
           </li>
           <li>
             Projects <i className="far fa-caret-square-down"></i>
             <ul>
               <li>
-                <a href="#">Current</a>
+                <a href="#cur-projs">Current</a>
               </li>
               <li>
-                <a href="#">Completed</a>
+                <a href="#complete-projs">Completed</a>
               </li>
             </ul>
           </li>
@@ -27,7 +27,7 @@ function Navbar() {
             <a href="#">Resume</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#main-footer">Contact</a>
           </li>
         </ul>
       </nav>

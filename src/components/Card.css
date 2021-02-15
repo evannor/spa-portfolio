@@ -18,6 +18,9 @@
   transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
   transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
 }
+.card:hover {
+  cursor: pointer;
+}
 .card:hover::after {
   transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
 }
@@ -69,4 +72,9 @@
 }
 .category-mpa {
   background-color: #d80fcc;
+}
+
+.card a:link,
+.card a:visited {
+  color: #000;
 }
