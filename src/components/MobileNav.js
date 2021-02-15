@@ -2,30 +2,35 @@ import React from "react";
 import "./MobileNav.css";
 
 function MobileNav() {
+  // close the MobileNav menu when you click anywhere in the menu that isn't a selection
+  const menu = document.getElementsByClassName("toggler");
+  function menuHandler() {
+    menu[0].checked = false;
+  }
   return (
     <div className="menu-wrap">
       <input type="checkbox" className="toggler" />
       <div className="hamburger">
         <div></div>
       </div>
-      <div className="menu">
+      <div className="menu" onClick={menuHandler}>
         <div>
           <div>
             <ul>
               <li>
-                <a href="#">Home</a>
+                <a href="#navbar">Home</a>
               </li>
               <li>
-                <a href="#">About</a>
+                <a href="#about-me">About</a>
               </li>
               <li>
-                <a href="#">Projects</a>
+                <a href="#cur-projs">Projects</a>
               </li>
               <li>
                 <a href="#">Resume</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="#main-footer">Contact</a>
               </li>
             </ul>
           </div>
