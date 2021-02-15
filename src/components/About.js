@@ -29,32 +29,55 @@ function About() {
           </p>
         </div>
         <div className="skills">
-          <div>
+          <h2>Skills</h2>
+          <div className="tools">
             <h3>Tools</h3>
             <ul>
               <li>Git</li>
               <li>Authentication &amp; Security</li>
             </ul>
           </div>
-          <div>
+          <div className="frontend">
             <h3>Front-End</h3>
             <ul>
-              <li>HTML5</li>
-              <li>CSS</li>
-              <li>SASS</li>
-              <li>Bootstrap</li>
-              <li>JavaScript</li>
-              <li>React</li>
+              <li>
+                <i className="fab fa-html5"></i>HTML5
+              </li>
+              <li>
+                <i className="fab fa-css3"></i>CSS
+              </li>
+              <li>
+                <i className="fab fa-sass"></i>SASS
+              </li>
+              <li>
+                <i className="fab fa-bootstrap"></i>Bootstrap
+              </li>
+              <li>
+                <i className="fab fa-js"></i>JavaScript
+              </li>
+              <li>
+                <i className="fab fa-react"></i>React
+              </li>
             </ul>
           </div>
-          <div>
+          <div className="backend">
             <h3>Back-End</h3>
             <ul>
-              <li>Node.js</li>
-              <li>REST API</li>
-              <li>EJS</li>
-              <li>MongoDB</li>
-              <li>Express.js</li>
+              <li>
+                <i className="fab fa-node-js"></i>Node.js
+              </li>
+              <li>
+                <i className="fas fa-exchange-alt"></i>REST API
+              </li>
+              <li>
+                <i className="fas fa-percentage"></i>EJS
+              </li>
+              <li>
+                <i className="fas fa-database"></i>MongoDB
+              </li>
+              <li>
+                <i className="fas fa-exchange-alt"></i>Express.js
+              </li>
             </ul>
           </div>
         </div>
