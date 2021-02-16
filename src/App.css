@@ -114,3 +114,8 @@ img {
     text-align: center;
   }
 }
+@media (max-width: 300px) {
+  .border {
+    font-size: initial;
+  }
+}

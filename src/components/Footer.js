@@ -18,9 +18,15 @@ function Footer() {
       .then(
         (result) => {
           console.log(result.text);
+          alert(
+            "Thank you so much for your message! I hope to speak with you soon!"
+          );
         },
         (error) => {
           console.log(error.text);
+          alert(
+            "I'm sorry! There was an issue sending the email. Please email me at: erica.vannorman@gmail.com"
+          );
         }
       );
     e.target.reset();
