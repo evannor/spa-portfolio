@@ -27,7 +27,12 @@ function MobileNav() {
                 <a href="#cur-projs">Projects</a>
               </li>
               <li>
-                <a href="#">Resume</a>
+                <a
+                  href="https://drive.google.com/file/d/13pvpkiQYp9czOopstEWONIqYmRB1KpNk/view?usp=sharing"
+                  target="_blank"
+                >
+                  Resume
+                </a>
               </li>
               <li>
                 <a href="#main-footer">Contact</a>
