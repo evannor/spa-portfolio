@@ -12,10 +12,10 @@ function Footer() {
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        "service_0ptm9fm",
+        "portfolio-footer-contact",
         e.target,
-        process.env.REACT_APP_USER_ID
+        "user_V9yRlpDu3aGzh2Euoh2S8"
       )
       .then(
         (result) => {
