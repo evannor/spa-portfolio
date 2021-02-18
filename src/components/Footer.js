@@ -1,6 +1,8 @@
 import React from "react";
-import emailjs from "emailjs-com";
+import emailjs, { init } from "emailjs-com";
 import "./Footer.css";
+
+init("user_V9yRlpDu3aGzh2Euoh2S8");
 
 function Footer() {
   const copyDate = new Date().getFullYear();
