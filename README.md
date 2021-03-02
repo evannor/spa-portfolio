@@ -1,4 +1,5 @@
 Simple Portfolio SPA
+www.erica-vannorman.com
 
 About:
 This is my current portfolio, showcasing the work I've completed and what I'm currently creating.
